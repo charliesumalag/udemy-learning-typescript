@@ -37,3 +37,16 @@ let usersExplicit : {
         id: 4,
     }
 }//this is the explicit approach
+
+
+let val : {} = 'Hello';
+console.log(typeof val);//string {} typescrpt dont say {} this an object. its simmilar with any. its a flexible one
+
+
+
+let data: Record<string, number | string>; //first argument is for key name, and second is the vallue
+//data = 'Helloe';//doesnt allow now since data needs to be object;
+data = {
+    'entry1': 1,
+    'entry2': 'some string',
+};
