@@ -1,13 +1,14 @@
-let hoobies = ['Sports', 'Cooking'];
-let hoobiesExplecitAssing : string[] = ['Sports', 'Cooking'];//can do this too. explecit assigning
+let possibleResults : number[];
 
-let users : string[];
-let userrsAcceptTwoDataTypes: (string | number)[];//using union. just place it into an close and open parenthesis
+possibleResults = [1,-1];
+possibleResults = [5,10,12];
+//the code above is accepted. but what if you want a exact size and more presize data types.thats were tuples comes in
 
-//alternative 
-let userrsAcceptTwoDataTypesAlternative: Array<string | number>;//this is generic type approach
+//tupes
 
+let tuplesPossibelResult : [number, number];
+let tuplesPossibelResultString : [number, string];
+tuplesPossibelResult = [1,2];
+tuplesPossibelResult = [1,2,3];//error since tuples set it it is fixed length.
+tuplesPossibelResultString = [1.2];//errror since tuples set it second value would be stirng.
 
-
-userrsAcceptTwoDataTypes = ['hello', 5];
-userrsAcceptTwoDataTypes = [5, 5];
