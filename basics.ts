@@ -1,12 +1,9 @@
-let age: number;
 let userName: string;
-let isLogin: boolean;
+let userAge = 38;
 
-age = 4;
-isLogin = true;
-userName = 'alex';
-// age = 'hello';error since the age type is number.
+//let userAge: number = 38; //thi is the explicit one
 
-console.log(age);
-console.log(isLogin);
-console.log(userName);
+
+userName = "Alex";
+
+userAge = '34';//gets error becuase its value typescript know its number since it was initialize number type not explicit but typescipt know it is a number at the first place.
